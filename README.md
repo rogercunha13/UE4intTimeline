@@ -9,13 +9,13 @@ Os nós da linha de tempo são nós especiais dentro de Blueprints que permitem 
 ## UTILIZANDO A TIMELINE
 
 Para isso, foi criado uma Blueprint tipo Actor para o controle da luz (componente point light):
-![Imagem_BP_Controledaluz](imagens/Imagem_BP_Controledaluz.jpg)
+![Imagem_BP_Controledaluz](Imagens/Imagem_BP_Controledaluz.jpg)
 
 - Criado uma **Variável** do tipo **PointLight** com o nome de "ReferenceLuz" para que o objeto BP_ControledaLuz tenha referência do PointLight inserido no Level.
 
 - Inserido o Actor (BP_ControledaLuz) no level:
 
-![Imagem_Actor_noLevel](imagens/Imagem_Actor_noLevel.jpg)
+![Imagem_Actor_noLevel](Imagens/Imagem_Actor_noLevel.jpg)
 
 Realizar a referência (conhcecimento da PointLight) ao BP_ControledaLuz;
 
@@ -50,4 +50,4 @@ Ao clicar duas vezes em cada ponto, poderá escolher a cor desejada do tempo det
 
 ![Imagem_EsolhendoaCor_ColorTrack](Imagens/Imagem_EsolhendoaCor_ColorTrack.jpg)
 
-Após a configuração das cores, realizar 
+Após a configuração das cores, realizar
