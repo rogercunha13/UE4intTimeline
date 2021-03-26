@@ -50,4 +50,15 @@ Ao clicar duas vezes em cada ponto, poderá escolher a cor desejada do tempo det
 
 ![Imagem_EsolhendoaCor_ColorTrack](Imagens/Imagem_EsolhendoaCor_ColorTrack.jpg)
 
-Após a configuração das cores, realizar
+Clicar nas opções **Autoplay** e **Loop**:
+
+![Imagem_Autoplay_Loop](Imagens/Imagem_Autoplay_Loop.jpg)
+
+Após a configuração das cores, realizar a implementação da lógica de variação da cor com o TimeLine no **Event Graph** do **BP_ControledaLuz**:
+
+![Imagem_logica_ControleLuz](Imagens/Imagem_logica_ControleLuz.jpg)
+
+Em seguida, clicar em Play para ver a ação no viewport do Level;
+segue o video para conferir o resultado:
+
+[TIMELINE - ATIVIDADE A LUZ](https://www.youtube.com/watch?v=xpLSVvXUmeY)
