@@ -29,14 +29,14 @@ No Event Graph do **BP_ControledaLuz**:
 
 Inserir o nome da TimeLine e em seguida clicar duas vezes em cima da TimeLine:
 
-  ![Imagem_Timeline](Imagens/Imagem_Timeline.JPG)
+  ![Imagem_Timeline](Imagens/Imagem_Timeline.jpg)
 
 
 Após clicar na TimeLine:
 
 - Adicionar uma ColorTrack:
 
-![Imagem_ColorTrack](Imagens/Imagem_ColorTrack.JPG)
+![Imagem_ColorTrack](Imagens/Imagem_ColorTrack.jpg)
 
 Adicionar os pontos de tempo no Color:
 
