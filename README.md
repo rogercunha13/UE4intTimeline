@@ -65,9 +65,9 @@ segue o video para conferir o resultado:
 
 ## UTILIZANDO A TIMELINE PARA MOVIMENTO DE PORTAS
 
-## Porta deslizante:
+## 1 - Porta deslizante:
 
-Para criar uma porta deslizante na cena, você poderá seguir os seguintes passos:
+ 1.1 - Para criar uma porta deslizante na cena, você poderá seguir os seguintes passos:
 
 - Acionar uma porta:
   - Para o exemplo, foi utilizado a SM_Door do StarterContent: ![Imagens_SM_Door](Imagens/Imagens_SM_Door.jpg)
@@ -85,7 +85,9 @@ Ao acessar a Blueprint do objeto, inserir uma box colision;
 
 Em seguida salvar e Compilar;
 
-No Event Graph do objeto:
+## 2 - Movimento da porta:
+
+2.1 - No Event Graph do objeto:
 
 Para realizar o movimento inicial, é necessário primeiramente que seja conhecido a posição inicial do objeto:
 
@@ -97,7 +99,7 @@ Em seguida, é realizado o conhecimento da posição do objeto na cena:
 
 ![Imagem_PosicaonaCena](Imagens/Imagem_PosicaonaCena.jpg)
 
-Criado um novo Evento (AddCustomEvent) com uma input e combinando com uma Branch para o acionamento da porta;
+2.2 - Criado um novo Evento (AddCustomEvent) com uma input e combinando com uma Branch para o acionamento da porta;
 
 Depois inserido um Timeline para o tempo da porta com variação no tempo 1 no valor 100 para o movimento de deslize da porta:
 
@@ -123,3 +125,48 @@ Como variou apenas no eixo X, Este ponto fica visivel na Timeline:
 ![Imagem_MovimentoPortaDeslizante](Imagens/Imagem_MovimentoPortaDeslizante.jpg)
 
 ![Imagem_VerificacaoPortaDeslizante](Imagens/Imagem_VerificacaoPortaDeslizante.jpg)
+
+## 3 - Abrindo porta com o **Float Curve**:
+
+3.1 - No content Browser, no botão direito do mouse selecionar o seguinte:
+
+![Imagem_FloatCurve](Imagens/Imagem_FloatCurve.jpg)
+
+- Add keys (adicionar dois pontos):
+
+Sendo: o primeiro Time: 0 e value: 0;
+       o segundo Time: 1 e value: 90;
+
+![Imagem_CurveTempos](Imagens/Imagem_CurveTempos.jpg)
+
+Em seguida, realizar o mesmo procedimento do item 1.1;
+
+Ao iniciar o item 2.1:
+
+- clicar no float curve criado: ![Imagem_FloatCurveCriado](Imagens/Imagem_FloatCurveCriado.jpg)
+
+Clicar na lupa para associar a curva criada ao objeto que realizará o movimento:
+
+![Imagem_CurveProcurar](Imagens/Imagem_CurveProcurar.jpg)
+
+Os procedimentos são semelhantes ao item 2.1, porém na criação da timeline é realizado o procedimento distinto:
+
+Na timeline criada:
+
+![Imagem_SelecionaCurveTimeline](Imagens/Imagem_SelecionaCurveTimeline.jpg)
+
+**(Add Select Curve Asset)**
+
+Irá selecionar o Float Curve criado no item 3.1;
+
+Em seguida, Compilar e salvar;
+
+a TimeLine criada ficará assim:
+
+![Imagem_TimelineCurveCriada](Imagens/Imagem_TimelineCurveCriada.jpg)
+
+Então para o movimento da porta utilizando o float Curve ficará:
+
+![Imagem_MovimentoPortaFloatCurve](Imagens/Imagem_MovimentoPortaFloatCurve.jpg)
+
+![Imagem_VerificacaoFloatCurve](Imagens/Imagem_VerificacaoFloatCurve.jpg)
