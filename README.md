@@ -62,3 +62,64 @@ Em seguida, clicar em Play para ver a ação no viewport do Level;
 segue o video para conferir o resultado:
 
 [TIMELINE - ATIVIDADE A LUZ](https://www.youtube.com/watch?v=xpLSVvXUmeY)
+
+## UTILIZANDO A TIMELINE PARA MOVIMENTO DE PORTAS
+
+## Porta deslizante:
+
+Para criar uma porta deslizante na cena, você poderá seguir os seguintes passos:
+
+- Acionar uma porta:
+  - Para o exemplo, foi utilizado a SM_Door do StarterContent: ![Imagens_SM_Door](Imagens/Imagens_SM_Door.jpg)
+
+
+Inserido a SM_Door na cena;
+
+- Clicar no objeto inserido (SM_Door) na cena e converter em Blueprint;
+
+![Imagens_ConvertBluePrint](Imagens/Imagens_ConvertBluePrint.jpg)
+
+Ao acessar a Blueprint do objeto, inserir uma box colision;
+
+![Imagens_InserindoBoxColision](Imagens/Imagens_InserindoBoxColision.jpg)
+
+Em seguida salvar e Compilar;
+
+No Event Graph do objeto:
+
+Para realizar o movimento inicial, é necessário primeiramente que seja conhecido a posição inicial do objeto:
+
+Para isso, é criado uma Variável (TIPO VECTOR) e denominada no exemplo como "PosicaoInicial":
+
+![Imagem_VariavelPosicaoInicial](Imagens/Imagem_VariavelPosicaoInicial.jpg)
+
+Em seguida, é realizado o conhecimento da posição do objeto na cena:
+
+![Imagem_PosicaonaCena](Imagens/Imagem_PosicaonaCena.jpg)
+
+Criado um novo Evento (AddCustomEvent) com uma input e combinando com uma Branch para o acionamento da porta;
+
+Depois inserido um Timeline para o tempo da porta com variação no tempo 1 no valor 100 para o movimento de deslize da porta:
+
+![Imagem_TimelinePortaDeslizante](Imagens/Imagem_TimelinePortaDeslizante.jpg)
+
+Adicionar os pontos de variação do tempo (keys):
+
+![Imagem_addkeysTimeline](Imagens/Imagem_addkeysTimeline.jpg)
+
+- All key to all curves (adiciona os pontos para os três eixos)
+
+![Imagem_TimelineTempoPorta](Imagens/Imagem_TimelineTempoPorta.jpg)
+
+
+Os eixos Y e Z estão no tempo e valor 0.0 enquanto o eixo X (posição onde irá fazer o movimento) está no tempo 1 no valor 100.
+
+PS: foi inserido dois pontos (keys) apenas no eixo X onde foi feito a variação do tempo.
+
+Como variou apenas no eixo X, Este ponto fica visivel na Timeline:
+
+![Imagem_ValorXTimeline](Imagens/Imagem_ValorXTimeline.jpg)
+
+![Imagem_MovimentoPortaDeslizante](Imagens/Imagem_MovimentoPortaDeslizante.jpg)
+
+![Imagem_VerificacaoPortaDeslizante](Imagens/Imagem_VerificacaoPortaDeslizante.jpg)
