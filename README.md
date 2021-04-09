@@ -176,7 +176,7 @@ Então para o movimento da porta utilizando o float Curve ficará:
 ## Inserindo uma HUD básica:
 
 Neste exemplo vamos inserir uma HUD básica de **VIDA** do personagem.
-Primeiramente criamos um evento de **Dano** na blueprint do personagem:
+- Primeiramente criamos um evento de **Dano** na blueprint do personagem:
 
 ![AddCustomEvent](imagens/AddCustomEvent.jpg)
 
